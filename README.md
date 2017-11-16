@@ -1,2 +1,2 @@
-# dotfiles
-Dotfiles for Arch Linux. i3-gaps/polybar
+## dotfiles
+Dotfiles for Arch Linux with i3-gaps, polybar.
