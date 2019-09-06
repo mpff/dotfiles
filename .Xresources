@@ -1,0 +1,65 @@
+! .Xresources by mpff
+ 
+!-----------------------
+!  URxvt Configuration
+!-----------------------
+
+! make colors pop (?)
+URxvt.intensityStyles: false
+
+! clean up 
+URxvt.scrollBar: false
+!URxvt.iso14755: false
+!URxvt.iso14755_52: false
+
+! terminal padding
+URxvt.internalBorder: 10
+
+! perl extensions
+URxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher: firefox
+URxvt.matcher.button: 1
+! URxvt.matcher.rend.0: Uline Bold fg5
+
+!-----------------
+!  Font Settings
+!-----------------
+
+! Xft Settings
+xft.dpi:                                96
+Xft.antialias:                          true
+Xft.hinting:                            true
+Xft.autohint:                           false
+Xft.hintstyle:                          hintslight
+Xft.lcdfilter:                          lcddefault
+Xft.rgba:                               rgb
+
+! URxvt Settings
+URxvt*letterSpace: -1
+URxvt*font: xft:SauceCodePro Nerd Font:style=Medium:size=9
+URxvt*boldFont: xft:SauceCodePro Nerd Font:style=Bold:size=9
+
+!---------------------
+!  URxvt Colorscheme
+!---------------------
+
+! Transparency
+urxvt*depth: 32
+
+! Gruvbox Colorscheme
+#include ".Xresources.d/colorschemes/gruvbox"
+! BigFootN Colorscheme
+!#include ".Xresources.d/colorschemes/bigfootn"
+
+!----------------------
+!  Rofi Configuration
+!----------------------
+
+rofi.width:                          50
+rofi.lines:                          3
+rofi.columns:                        5
+rofi.font:                           mono 9
+rofi.bw:                             1
+rofi.location:                       0
+rofi.padding:                        5
+rofi.yoffset:                        -190
