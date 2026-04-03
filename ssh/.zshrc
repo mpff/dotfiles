@@ -6,6 +6,9 @@ plugins=(git colored-man-pages zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
+# Prepend hostname in yellow to make clear you're on a remote machine
+PROMPT="%F{yellow}%m%f $PROMPT"
+
 # Editor
 export EDITOR='vim'
 
