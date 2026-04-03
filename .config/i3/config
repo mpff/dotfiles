@@ -278,11 +278,7 @@ exec --no-startup-id dunst --config ~/.config/dunst/dunstrc
 # launch polybar
 exec_always --no-startup-id $HOME/.config/polybar/scripts/launch_polybar.sh
 
-# lock on suspend
-exec --no-startup-id xss-lock -- ~/.config/i3/scripts/blur-lock.sh
-
 # Autostart apps as you like
-exec --no-startup-id dropbox
 exec --no-startup-id seafile-applet 
 
 
