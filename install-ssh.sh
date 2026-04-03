@@ -41,8 +41,13 @@ if command -v zsh &>/dev/null; then
     fi
 
     cp "$DOTFILES/ssh/.zshrc" "$HOME/.zshrc"
+
+    # Fall back to exec zsh from bash if chsh is not permitted (e.g. LDAP servers)
+    if ! grep -q "exec zsh" "$HOME/.bashrc" 2>/dev/null; then
+        echo '[ -x "$(which zsh)" ] && exec zsh' >> "$HOME/.bashrc"
+    fi
+
     echo "Done — shell: zsh + oh-my-zsh"
-    echo "Run: chsh -s \$(which zsh)  (if you want zsh as default)"
 else
     echo "==> zsh not found, falling back to bash..."
     cp "$DOTFILES/ssh/.bashrc" "$HOME/.bashrc"
