@@ -1,0 +1,75 @@
+runtime! archlinux.vim 2>/dev/null
+
+"------------
+"  vim-plug
+"------------
+
+call plug#begin('~/.vim/plugged')
+Plug 'vim-airline/vim-airline'
+call plug#end()
+
+"--------------------
+"  General Settings
+"--------------------
+
+syntax enable
+
+set encoding=utf8
+set number
+set wildmenu
+set showcmd
+set showmatch
+set ignorecase
+set smartcase
+set incsearch
+set hidden
+set history=100
+set laststatus=2
+set timeoutlen=500
+
+" Tabs
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+
+" Indentation
+set autoindent
+filetype plugin indent on
+
+" Line Wrapping
+set textwidth=80
+set breakindent
+let &showbreak="> "
+set breakindentopt=shift:2,min:20
+
+" Mappings
+set mouse=a
+set backspace=indent,eol,start
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
+
+" Jump to last position when opening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
+"-------------------
+"  Plugin Settings
+"-------------------
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 0
+
+"-------------
+"  Filetypes
+"-------------
+
+autocmd FileType tex      setlocal shiftwidth=2 softtabstop=2 textwidth=0 spell spelllang=en_gb,de_de
+autocmd FileType bib      setlocal shiftwidth=2 softtabstop=2 textwidth=0
+autocmd FileType python   setlocal shiftwidth=4 softtabstop=4 textwidth=80
+autocmd FileType r        setlocal shiftwidth=4 softtabstop=4 textwidth=80
+autocmd FileType yaml     setlocal shiftwidth=2 softtabstop=2 textwidth=0
+autocmd FileType markdown setlocal shiftwidth=2 softtabstop=2 textwidth=0
+autocmd FileType vim      setlocal shiftwidth=2 softtabstop=2 textwidth=0
