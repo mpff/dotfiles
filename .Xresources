@@ -1,65 +1,42 @@
-! .Xresources by mpff
- 
-!-----------------------
-!  URxvt Configuration
-!-----------------------
+! Display Settings
+Xft.dpi: 144
 
-! make colors pop (?)
-URxvt.intensityStyles: false
+! These might also be useful depending on your monitor and personal preference:
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
 
-! clean up 
-URxvt.scrollBar: false
-!URxvt.iso14755: false
-!URxvt.iso14755_52: false
+! EndeavourOS - Mouse Defaults
+Xcursor.theme: capitaine-cursors-light
+Xcursor.size: 32
 
-! terminal padding
-URxvt.internalBorder: 10
-
-! perl extensions
-URxvt.perl-ext-common: default,matcher
-URxvt.urlLauncher: firefox
-URxvt.matcher.button: 1
-! URxvt.matcher.rend.0: Uline Bold fg5
-
-!-----------------
-!  Font Settings
-!-----------------
-
-! Xft Settings
-xft.dpi:                                96
-Xft.antialias:                          true
-Xft.hinting:                            true
-Xft.autohint:                           false
-Xft.hintstyle:                          hintslight
-Xft.lcdfilter:                          lcddefault
-Xft.rgba:                               rgb
-
-! URxvt Settings
-URxvt*letterSpace: -1
-URxvt*font: xft:SauceCodePro Nerd Font:style=Medium:size=9
-URxvt*boldFont: xft:SauceCodePro Nerd Font:style=Bold:size=9
-
-!---------------------
-!  URxvt Colorscheme
-!---------------------
-
-! Transparency
-urxvt*depth: 32
-
-! Gruvbox Colorscheme
-#include ".Xresources.d/colorschemes/gruvbox"
-! BigFootN Colorscheme
-!#include ".Xresources.d/colorschemes/bigfootn"
-
-!----------------------
-!  Rofi Configuration
-!----------------------
-
-rofi.width:                          50
-rofi.lines:                          3
-rofi.columns:                        5
-rofi.font:                           mono 9
-rofi.bw:                             1
-rofi.location:                       0
-rofi.padding:                        5
-rofi.yoffset:                        -190
+! Colorscheme
+*.background:  #222222
+*.foreground:  #e1e1e1
+! Black + DarkGrey
+*color0:  #222222
+*color8:  #535353
+! DarkRed + Red
+*color1:  #E84f4f
+*color9:  #FF5252
+! DarkGreen + Green
+*color2:  #B7CE42
+*color10: #F9FF44
+! DarkYellow + Yellow
+*color3:  #FEA63C
+*color11: #FFD939
+! DarkBlue + Blue
+*color4:  #597072
+*color12: #7DB9C7
+! DarkMagenta + Magenta
+*color5:  #B7416E
+*color13: #FE448B
+!DarkCyan + Cyan (both not tango)
+*color6:  #66A9B9
+*color14: #71E7FF
+! LightGrey + White
+*color7:  #E1E1E1
+*color15: #CCCCCC

@@ -1,0 +1,7 @@
+[user]
+	email = mnl.pfeuffer@gmail.com
+	name = Manuel Pfeuffer
+[credential]
+	helper = cache
+[core]
+	autocrlf = input
