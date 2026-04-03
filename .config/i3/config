@@ -193,7 +193,7 @@ bindsym $mod+r mode "resize"
 # exit-menu
 bindsym $mod+Shift+e exec ~/.config/i3/scripts/powermenu
 
-# lock system by blurring the screen
+# lock screen
 bindsym $mod+l exec ~/.config/i3/scripts/blur-lock.sh
 
 # reload the configuration file
