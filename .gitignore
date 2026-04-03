@@ -1,0 +1,11 @@
+# Secrets
+*.secret
+*.secret.toml
+*.secret.conf
+
+# Nitrogen wallpaper path (machine-specific)
+.config/nitrogen/bg-saved.cfg
+
+# Compiled/cached files
+*.zwc
+__pycache__/
