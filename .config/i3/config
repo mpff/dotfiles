@@ -267,7 +267,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id picom
 
 # Change screen temperature with daylight
-exec --no-startup-id redshift -l 52.52437:13.41053
+exec --no-startup-id redshift -l geoclue2
 
 # set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
